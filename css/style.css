@@ -1,0 +1,164 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: .875rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  max-width: 100%;
+}
+
+/*--------------------------------------------
+header
+--------------------------------------------*/
+header {
+  padding: 20px 40px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+header h1 {
+  line-height: 1em;
+}
+
+header h1 a {
+  display: block;
+}
+
+header h1 a img {
+  vertical-align: top;
+}
+
+header #nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  padding: 60px 25px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 20;
+  opacity: 0;
+  background: #121212;
+  height: 100vh;
+}
+
+header #nav a {
+  color: white;
+}
+
+header #nav .menu {
+  margin-bottom: 60px;
+}
+
+header #nav .menu li {
+  padding: 20px 0;
+  border-top: solid 1px white;
+}
+
+header #nav .menu li:last-child {
+  border-bottom: solid 1px white;
+}
+
+header #nav .menu li a {
+  text-transform: uppercase;
+}
+
+header #nav .sns li {
+  margin-bottom: 15px;
+}
+
+header #nav.open {
+  left: 0;
+  opacity: 1;
+}
+
+header .menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 20;
+}
+
+header .menu-btn span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 4px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header .menu-btn span:first-child {
+  top: 4px;
+}
+
+header .menu-btn span:nth-child(2) {
+  top: 14px;
+}
+
+header .menu-btn span:last-child {
+  bottom: 4px;
+}
+
+header .menu-btn.open span:first-child {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+          transform: translateY(10px) rotate(-315deg);
+  background-color: white;
+}
+
+header .menu-btn.open span:last-child {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+          transform: translateY(-10px) rotate(315deg);
+  background-color: white;
+}
+
+header #mask {
+  display: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+header #mask.open {
+  display: block;
+  background-color: #000;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
