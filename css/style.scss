@@ -44,3 +44,44 @@ header {
     }
   }
 
+  #nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    padding: 60px 25px;
+    transition: all .5s;
+    z-index: 20;
+    opacity: 0;
+    background: #121212;
+    height: 100vh;
+
+    a {
+      color: white;
+    }
+
+    .menu {
+      margin-bottom: 60px;
+      li {
+        padding: 20px 0;
+        border-top: solid 1px white;
+        &:last-child {
+          border-bottom: solid 1px white;
+        }
+        a {
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .sns {
+      li {
+        margin-bottom: 15px;
+      }
+    }
+
+    &.open {
+      left: 0;
+      opacity: 1;
+    }
+  }
