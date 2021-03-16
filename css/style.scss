@@ -125,6 +125,11 @@ header {
           background-color: white;
         }
 
+        &:nth-child(2) {
+          opacity: 0;
+          background-color: white;
+        }
+
         &:last-child {
           transform: translateY(-10px) rotate(315deg);
           background-color: white;

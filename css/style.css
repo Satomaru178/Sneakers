@@ -137,6 +137,11 @@ header .menu-btn.open span:first-child {
   background-color: white;
 }
 
+header .menu-btn.open span:nth-child(2) {
+  opacity: 0;
+  background-color: white;
+}
+
 header .menu-btn.open span:last-child {
   -webkit-transform: translateY(-10px) rotate(315deg);
           transform: translateY(-10px) rotate(315deg);
