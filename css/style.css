@@ -20,6 +20,45 @@ img {
 
 video {
   max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.sec-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.grid .item {
+  margin-bottom: 10px;
+}
+
+.grid .item img {
+  margin-bottom: 10px;
+  vertical-align: top;
+}
+
+.grid .item .texts {
+  padding: 20px;
+}
+
+.grid .item .texts p {
+  font-size: .75rem;
+}
+
+.grid .item .texts .text {
+  font-weight: bold;
 }
 
 /*--------------------------------------------
@@ -165,5 +204,16 @@ header #mask.open {
   top: 0;
   left: 0;
   cursor: pointer;
+}
+
+/*--------------------------------------------
+pick-up
+--------------------------------------------*/
+/*--------------------------------------------
+feature
+--------------------------------------------*/
+#feature {
+  max-width: 1240px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
