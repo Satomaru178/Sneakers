@@ -140,20 +140,20 @@
             テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト
           </p>
         </div>
-        <form action="#" method="POST">
-          <label for="name">
-            Name:
-            <input type="text">
-          </label>
-          <label for="email">
-            Mail:
-            <input type="text">
-          </label>
-          <label for="message">
-            Message:
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          </label>
-          <button><a href="#">SEND</a></button>
+        <form action="#" method="POST" class="form">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name">
+          </div>
+          <div>
+            <label for="mail">Mail:</label>
+            <input type="email" name="mail">
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="3"></textarea>
+          </div>
+          <a href="#" class="btn">SEND</a>
         </form>
       </div>
     </section>
