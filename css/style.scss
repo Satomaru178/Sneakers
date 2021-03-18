@@ -230,4 +230,45 @@ feature
   }
 }
 
+/*--------------------------------------------
+contact
+--------------------------------------------*/
+#contact {
+  background-color: #121212;
+  color: white;
+  padding: 60px 120px;
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    .info {
+      width: 45%;
+      p {
+        margin-bottom: 30px;
+      }
+    }
+    .form {
+      width: 45%;
+      div {
+        margin-bottom: 20px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+      }
+      .btn {
+        display: inline-block;
+        color: white;
+        border: solid 1px white;
+        padding: 13px 80px;
+        &:hover {
+          background-color: white;
+          color: #121212;
+        }
+      }
+    }
+  }
+}
+
 }
