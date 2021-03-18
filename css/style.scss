@@ -192,4 +192,40 @@ feature
 #feature {
   max-width: 1240px;
   margin: 0 auto;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 25px;
+    justify-content: space-between;
+
+    .item {
+      margin-bottom: 10px;
+      box-shadow: 0 0 8px gray;
+
+      img {
+        vertical-align: top;
+      }
+
+      .texts {
+        padding: 30px;
+
+        .cat {
+          margin-bottom: 20px;
+          font-size: .8rem;
+        }
+
+        .text {
+          margin-bottom: 20px;
+          font-weight: bold;
+        }
+
+        .date {
+          font-size: .8rem;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
 }
