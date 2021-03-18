@@ -30,30 +30,6 @@ video {
   text-align: center;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 20px;
-  justify-content: space-between;
-
-  .item {
-    margin-bottom: 10px;
-
-    img {
-      margin-bottom: 10px;
-      vertical-align: top;
-    }
-
-    .texts {
-      padding: 20px;
-      p {
-        font-size: .75rem;
-      }
-      .text {
-        font-weight: bold;
-      }
-    }
-  }
 }
 
 /*--------------------------------------------
