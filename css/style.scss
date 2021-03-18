@@ -192,6 +192,8 @@ feature
 #feature {
   max-width: 1240px;
   margin: 0 auto;
+  padding: 50px 0;
+
   .grid {
     display: grid;
     grid-template-columns: repeat(3, auto);
