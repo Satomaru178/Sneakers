@@ -33,6 +33,14 @@ img {
   margin-bottom: 40px;
 }
 
+.fadein {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 /*--------------------------------------------
 header
 --------------------------------------------*/
@@ -230,14 +238,6 @@ feature
 
 #feature .grid .item img {
   vertical-align: top;
-}
-
-#feature .grid .item .fadein {
-  opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 #feature .grid .item .texts {
