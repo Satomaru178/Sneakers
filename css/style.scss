@@ -255,7 +255,8 @@ contact
       div {
         margin-bottom: 20px;
       }
-      input,
+      input[type="text"],
+      input[type="email"],
       textarea {
         width: 100%;
         background-color: white;
