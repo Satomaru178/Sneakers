@@ -289,3 +289,18 @@ footer {
   font-size: .75rem;
   padding: 10px 0;
 }
+
+/*--------------------------------------------
+SP
+--------------------------------------------*/
+@media screen and (max-width: 983px) {
+  #feature {
+    .grid {
+      grid-template-columns: repeat(2, auto);
+      .item {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
