@@ -4,6 +4,7 @@ html {
 
 body {
   font-size: .875rem;
+  color: #121212;
 }
 
 li {
@@ -11,6 +12,7 @@ li {
 }
 
 a {
+  color: #121212;
   text-decoration: none;
 }
 
