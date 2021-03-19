@@ -6,6 +6,7 @@ html {
 
 body {
   font-size: .875rem;
+  color: #121212;
 }
 
 li {
@@ -13,6 +14,7 @@ li {
 }
 
 a {
+  color: #121212;
   text-decoration: none;
 }
 
@@ -30,6 +32,12 @@ img {
   text-align: center;
   font-size: 36px;
   margin-bottom: 40px;
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
 }
 
 /*--------------------------------------------
@@ -210,12 +218,6 @@ feature
 
       img {
         vertical-align: top;
-      }
-
-      .fadein {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 1s;
       }
 
       .texts {
