@@ -18,18 +18,15 @@ img {
   max-width: 100%;
 }
 
-video {
-  max-width: 100%;
+#main-video {
   -o-object-fit: contain;
      object-fit: contain;
+  max-width: 100%;
 }
 
 .sec-title {
   text-transform: uppercase;
   text-align: center;
-}
-
-.sec-title {
   font-size: 36px;
   margin-bottom: 40px;
 }
@@ -181,6 +178,9 @@ header #mask.open {
   cursor: pointer;
 }
 
+/*--------------------------------------------
+main-visual
+--------------------------------------------*/
 #main {
   padding-top: 60px;
 }
@@ -192,13 +192,21 @@ header #mask.open {
 /*--------------------------------------------
 pick-up
 --------------------------------------------*/
+#pick-up {
+  margin-bottom: 50px;
+}
+
+#pick-up .slick-slider li {
+  padding: 0 30px;
+}
+
 /*--------------------------------------------
 feature
 --------------------------------------------*/
 #feature {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 15px;
 }
 
 #feature .grid {
@@ -220,6 +228,14 @@ feature
 
 #feature .grid .item img {
   vertical-align: top;
+}
+
+#feature .grid .item .fadein {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #feature .grid .item .texts {
@@ -247,16 +263,18 @@ contact
 #contact {
   background-color: #121212;
   color: white;
-  padding: 60px 120px;
+  padding: 60px 15px;
 }
 
 #contact .flex {
+  max-width: 1240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
 
 #contact .flex .info {
@@ -275,21 +293,22 @@ contact
   margin-bottom: 20px;
 }
 
-#contact .flex .form input,
+#contact .flex .form input[type="text"],
+#contact .flex .form input[type="email"],
 #contact .flex .form textarea {
   width: 100%;
   background-color: white;
   padding: 10px;
 }
 
-#contact .flex .form .btn {
-  display: inline-block;
+#contact .flex .form .btn input {
+  width: 200px;
+  padding: 13px 0;
   color: white;
   border: solid 1px white;
-  padding: 13px 80px;
 }
 
-#contact .flex .form .btn:hover {
+#contact .flex .form .btn input:hover {
   background-color: white;
   color: #121212;
 }
@@ -303,5 +322,54 @@ footer {
   text-align: center;
   font-size: .75rem;
   padding: 10px 0;
+}
+
+/*--------------------------------------------
+SP
+--------------------------------------------*/
+@media screen and (max-width: 983px) {
+  #feature .grid {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+  #feature .grid .item {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 657px) {
+  #feature .grid {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #video {
+    margin-bottom: 80px;
+  }
+  #video #main-video {
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .sec-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  #contact {
+    padding: 30px 15px;
+  }
+  #contact .flex {
+    display: block;
+  }
+  #contact .flex .info {
+    width: 100%;
+  }
+  #contact .flex .form {
+    width: 100%;
+  }
+  #contact .flex .form .btn input {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
