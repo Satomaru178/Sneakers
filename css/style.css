@@ -344,6 +344,9 @@ SP
 }
 
 @media screen and (max-width: 600px) {
+  header {
+    padding: 20px 20px;
+  }
   #video {
     margin-bottom: 80px;
   }
@@ -355,6 +358,9 @@ SP
   .sec-title {
     font-size: 24px;
     margin-bottom: 25px;
+  }
+  #feature {
+    padding: 60px 15px;
   }
   #contact {
     padding: 30px 15px;
