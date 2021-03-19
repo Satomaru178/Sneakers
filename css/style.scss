@@ -240,8 +240,10 @@ contact
   color: white;
   padding: 60px 15px;
   .flex {
+    max-width: 1240px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     .info {
       width: 45%;
       p {
