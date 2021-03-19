@@ -11,16 +11,18 @@
     /*=================================================
     スライダー
     ===================================================*/
+    $('.slick-slider').slick({
+      arrows: false,
       centerMode: true,
-      centerPadding: '60px',
+      centerPadding: '100px',
       slidesToShow: 3,
+      // autoplay: true,
+      // autoplaySpeed: 2500,
       responsive: [
         {
           breakpoint: 768,
           settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '60px',
+            centerPadding: '50px',
             slidesToShow: 1
           }
         }
