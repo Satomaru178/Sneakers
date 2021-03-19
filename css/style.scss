@@ -312,3 +312,35 @@ SP
   }
 }
 
+@media screen and (max-width: 600px) {
+  #video {
+    margin-bottom: 80px;
+    #main-video {
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+
+  .sec-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  #contact {
+    padding: 30px 15px;
+    .flex {
+      display: block;
+      .info {
+        width: 100%;
+      }
+      .form {
+        width: 100%;
+        .btn {
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
