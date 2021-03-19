@@ -263,13 +263,16 @@ contact
         padding: 10px;
       }
       .btn {
-        display: inline-block;
-        color: white;
-        border: solid 1px white;
-        padding: 13px 80px;
-        &:hover {
-          background-color: white;
-          color: #121212;
+        // cursor: pointer;
+        input {
+          width: 200px;
+          padding: 13px 0;
+          color: white;
+          border: solid 1px white;
+          &:hover {
+            background-color: white;
+            color: #121212;
+          }
         }
       }
     }
