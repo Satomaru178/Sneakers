@@ -192,11 +192,17 @@ header #mask.open {
 main-visual
 --------------------------------------------*/
 #main {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 #video {
   margin-bottom: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#video #main-video {
+  width: 100%;
 }
 
 /*--------------------------------------------

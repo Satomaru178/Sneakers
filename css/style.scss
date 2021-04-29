@@ -179,11 +179,15 @@ header {
 main-visual
 --------------------------------------------*/
 #main {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 #video {
   margin-bottom: 120px;
+  object-fit: cover;
+  #main-video {
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------
